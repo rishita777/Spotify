@@ -7,12 +7,11 @@
 		<artifactId>SpotifyAppPreproject</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>SongCollection</artifactId>
+	<groupId>com.preproject</groupId>
+	<artifactId>Songs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SongCollection</name>
+	<name>Songs</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2021.0.5</spring-cloud.version>
@@ -22,16 +21,27 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>3.1.3</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-openfeign-core</artifactId>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
 		</dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
+            <scope>compile</scope>
+        </dependency>
 
 	</dependencies>
 	<dependencyManagement>
